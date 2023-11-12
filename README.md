@@ -1,36 +1,48 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Steps for running the next app
+1. Clone the Repository
+2. Navigate to the project folder
+3. Install the necessary libraries
+4. Run the application
 
-First, run the development server:
 
-```bash
+#### 1. Clone the Repository
+open the terminal and enter the command
+git clone https://github.com/yogesh9245/project-task-loading-screen.git
+
+#### 2. Navigate to the project folder
+Open the project folder using the command
+cd project-task-loading-screen
+
+#### 3. Install the necessary libraries
+I have used "@splinetool/react-spline" library in this project for embedding the 3D elements in my hero page
+Run the command to install the library
+npm install @splinetool/react-spline
+
+#### 4.Run the application
+To run the application, enter the command
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After running the command open the browser and enter the url "http://localhost:3000".
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project structure and Explaination
+The App folder is the entry point of the application. The app/page.js will be displayed at the root path of the app. I have Created "components" folder inside the project ("project-task-loading-screen/components"). I have created a components for the Loading Screen inside it. The Loading Screen components will receive a prop called as loading percentage from the app/page.js which is indicative of the percentage of 3D elements loaded in the background. The Spline 3d elements have onload() method which is an asynchronous method which provides the loading status of the Spline 3d element. From this onload() method, I have determined the percentage of number of Spline 3D elements loaded in the background.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+#### Screenshots from the app
+![Alt text](image-2.png)
 
-To learn more about Next.js, take a look at the following resources:
+![Alt text](image-3.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Alt text](image-4.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Alt text](image-5.png)
 
-## Deploy on Vercel
+![Alt text](image-6.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Alt text](image-7.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Alt text](image-8.png)
+
+
