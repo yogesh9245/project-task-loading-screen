@@ -21,7 +21,7 @@ export default function Home() {
   const handleLoad = () => {
     setTimeout(() => {
       setLoadedCount((prevCount) => prevCount + 1);
-    }, 2000); // Adjust the delay as needed
+    }, 200); // Adjust the delay as needed
   };
   
 
