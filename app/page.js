@@ -15,13 +15,25 @@ const splineURLs = [
 export default function Home() {
   const [loadedCount, setLoadedCount] = useState(0);
 
+  // const handleLoad = () => {
+  //   setLoadedCount((prevCount) => prevCount + 1);
+  // };
   const handleLoad = () => {
-    setLoadedCount((prevCount) => prevCount + 1);
+    setTimeout(() => {
+      setLoadedCount((prevCount) => prevCount + 1);
+    }, 1000); // Adjust the delay as needed
   };
+  
 
   const totalSplineElements = splineURLs.length;
   // const loadingPercentage = (loadedCount / totalSplineElements) * 100;
-  const loadingPercentage = Math.min((loadedCount / totalSplineElements) * 100, 100);
+  // const loadingPercentage = Math.min((loadedCount / totalSplineElements) * 100, 100);
+
+  const loadingPercentage = (loadedCount / totalSplineElements) * 100;
+
+// Ensure loading percentage doesn't exceed 100
+const cappedLoadingPercentage = loadingPercentage > 100 ? 100 : loadingPercentage;
+
 
 
   useEffect(() => {
@@ -35,7 +47,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-4 md:p-24">  {/* flex min-h-screen flex-col p-24 */}
       <div>Hero Page</div>
-      {loading && <LoadingScreen percentage={loadingPercentage} />}
+      {/* {loading && <LoadingScreen percentage={loadingPercentage} />} */}
+      {loading && <LoadingScreen percentage={cappedLoadingPercentage} />}
       {splineURLs.map((url, index) => (
         <div key={index} className='mb-4 md:mb-8 lg:mb-12 xl:mb-16'>
           <Spline
