@@ -5,7 +5,7 @@ import Spline from "@splinetool/react-spline";
 
 
 const splineURLs = [
-  "https://prod.spline.design/Gy2lrYdDiCKyuqRf/scene.splinecode",
+  "https://prod.spline.design/XBg6-noERzBWzGDO/scene.splinecode",
   "https://prod.spline.design/Jkhswu59xqkGtptb/scene.splinecode",
   "https://prod.spline.design/IVIqXQvsajU0LdRE/scene.splinecode",
   "https://prod.spline.design/Gy2lrYdDiCKyuqRf/scene.splinecode",
@@ -31,7 +31,7 @@ export default function Home() {
 
   const loadingPercentage = (loadedCount / totalSplineElements) * 100;
 
-// Ensure loading percentage doesn't exceed 100
+
 const cappedLoadingPercentage = loadingPercentage > 100 ? 100 : loadingPercentage;
 
 
