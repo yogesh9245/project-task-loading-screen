@@ -35,13 +35,13 @@ const LoadingScreen = ({ percentage }) => {
           @media screen and (max-width: 768px) {
            
             .text-2xl {
-              font-size: 1.5rem; 
+              font-size: 0.5rem; 
             }
             .text-4xl {
-              font-size: 2rem; 
+              font-size: 1rem; 
             }
             .text-9xl {
-              font-size: 4rem;  
+              font-size: 2rem;  
             }
             .mb-8 {
               margin-bottom: 1rem; 

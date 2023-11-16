@@ -4,12 +4,15 @@ import LoadingScreen from '../components/Loadingscreen';
 import Spline from "@splinetool/react-spline";
 
 
-const splineURLs = [
-  "https://prod.spline.design/XBg6-noERzBWzGDO/scene.splinecode",
-  "https://prod.spline.design/Jkhswu59xqkGtptb/scene.splinecode",
+const splineURLs = [  
   "https://prod.spline.design/IVIqXQvsajU0LdRE/scene.splinecode",
-  "https://prod.spline.design/Gy2lrYdDiCKyuqRf/scene.splinecode",
-  "https://prod.spline.design/A2uUhI48PQ6qiNP2/scene.splinecode"
+  "https://prod.spline.design/Jkhswu59xqkGtptb/scene.splinecode",
+  // "https://prod.spline.design/Jkhswu59xqkGtptb/scene.splinecode",
+  "https://prod.spline.design/IVIqXQvsajU0LdRE/scene.splinecode",
+  
+  "https://prod.spline.design/Jkhswu59xqkGtptb/scene.splinecode",
+
+  "https://prod.spline.design/OaWug0nRJxrjRKMz/scene.splinecode"
 ];
 
 export default function Home() {
