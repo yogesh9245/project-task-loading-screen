@@ -51,7 +51,7 @@ const cappedLoadingPercentage = loadingPercentage > 100 ? 100 : loadingPercentag
     <main className="flex min-h-screen flex-col p-4 md:p-24">  {/* flex min-h-screen flex-col p-24 */}
       <div>Hero Page</div>
       {/* {loading && <LoadingScreen percentage={loadingPercentage} />} */}
-      {loading && <LoadingScreen percentage={cappedLoadingPercentage} backgroundImage="/blacktexture.jpg"/>}
+      {loading && <LoadingScreen percentage={cappedLoadingPercentage} backgroundImage="/backgroundimage.png"/>}
       {splineURLs.map((url, index) => (
         <div key={index} className='mb-4 md:mb-8 lg:mb-12 xl:mb-16'>
           <Spline

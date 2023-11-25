@@ -1,74 +1,3 @@
-// "use client";
-// import React from 'react';
-
-// const LoadingScreen = ({ percentage , backgroundImage}) => {
-//   const gradientStyle = {
-//     background: `-webkit-linear-gradient(90deg, #E0E0E0 0%, #FFC3DD 27.48%, #E973C4 58.15%, #9545F6 100%)`,
-//     WebkitBackgroundClip: 'text',
-//     // text-fill-color: transparent;
-//     color: 'transparent',
-//   };
-
-//   return (
-//     <>
-//       <div className="fixed top-0 left-0 w-screen h-screen flex flex-col items-center justify-center z-10 bg-gray-900" style={{ backgroundImage: `url(${backgroundImage})` ,backgroundSize: 'cover'}}>
-       
-
-//         <div className='text-white text-2xl fixed left-4 top-10 ' style={gradientStyle}>
-//           va<span style={{ color: 'white' }}>:LABS</span>
-//         </div>
-//         <div className="flex justify-between w-full mb-8">
-//           <div className="text-4xl ml-4" style={percentage >= 20 ?  gradientStyle: { }}>
-//             You think
-//           </div>
-//           <div className="text-4xl mr-4" style={percentage >=80 ? gradientStyle: { }}>
-//             We create
-//           </div>
-//         </div>
-//         <div className="relative w-full bg-zinc-100 rounded-full mb-4 drop-shadow-2xl" style={{ height: '8px', borderRadius : '4px'}}>
-//           <div
-//             className="absolute top-0 left-0 h-full"
-//             style={{ width: `${ percentage}%`, background:  'linear-gradient(90deg, #E0E0E0 0%, #FFC3DD 27.48%, #E973C4 58.15%, #9545F6 100%)', color: '#DEDEDE' }}
-            
-//           ></div>
-//         </div>
-//         <div style={{fontFamily : 'Syne', fontWeight: 500, fontSize:'220px'}} className="text-white text-9xl absolute z-0 text-zinc-200">{percentage}</div>
-        
-//       </div>
-      
-//       <style>
-//         {`
-//           @media screen and (max-width: 768px) {
-           
-//             .text-2xl {
-//               font-size: 0.5rem; 
-//             }
-//             .text-4xl {
-//               font-size: 1rem; 
-//             }
-//             .text-9xl {
-//               font-size: 2rem;  
-//             }
-//             .mb-8 {
-//               margin-bottom: 1rem; 
-//             }
-//             .ml-4, .mr-4 {
-//               margin-left: 1rem; 
-//               margin-right: 1rem; 
-//             }
-            
-//           }
-//         `}
-//       </style>
-//     </>
-//   );
-// };
-
-// export default LoadingScreen;
-
-
-
-// In LoadingScreen.js
 const LoadingScreen = ({ percentage, backgroundImage }) => {
   const gradientStyle = {
     background: `-webkit-linear-gradient(90deg, #E0E0E0 0%, #FFC3DD 27.48%, #E973C4 58.15%, #9545F6 100%)`,
@@ -78,7 +7,8 @@ const LoadingScreen = ({ percentage, backgroundImage }) => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-screen h-screen flex flex-col items-center justify-center z-10 bg-gray-900" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
+      <div className="fixed top-0 left-0 w-screen h-screen flex flex-col items-center justify-center z-10 bg-black" style={{ backgroundImage: `url(${backgroundImage})` ,backgroundSize: 'cover' ,boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 10, 0.3)'}}>
+      
         <div className='text-white text-2xl fixed left-4 top-10 ' style={gradientStyle}>
           va<span style={{ color: 'white' }}>:LABS</span>
         </div>
@@ -155,8 +85,5 @@ const LoadingScreen = ({ percentage, backgroundImage }) => {
 };
 
 export default LoadingScreen;
-
-
-
 
 
