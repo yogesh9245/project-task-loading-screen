@@ -64,3 +64,5 @@ const cappedLoadingPercentage = loadingPercentage > 100 ? 100 : loadingPercentag
     </main>
   );
 }
+
+
