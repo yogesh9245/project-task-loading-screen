@@ -1,3 +1,4 @@
+
 const LoadingScreen = ({ percentage, backgroundImage }) => {
   const gradientStyle = {
     background: `-webkit-linear-gradient(90deg, #E0E0E0 0%, #FFC3DD 27.48%, #E973C4 58.15%, #9545F6 100%)`,
@@ -10,7 +11,7 @@ const LoadingScreen = ({ percentage, backgroundImage }) => {
       <div className="fixed top-0 left-0 w-screen h-screen flex flex-col items-center justify-center z-10 bg-black" style={{ backgroundImage: `url(${backgroundImage})` ,backgroundSize: 'cover' ,boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 10, 0.3)'}}>
       
         <div className='text-white text-2xl fixed left-4 top-10 ' style={gradientStyle}>
-          va<span style={{ color: 'white' }}>:LABS</span>
+          <img src="/logo.png" alt="" />
         </div>
         <div className="flex justify-between w-full mb-8">
           <div className="text-4xl ml-4" style={percentage >= 20 ? gradientStyle : {}}>
@@ -25,10 +26,17 @@ const LoadingScreen = ({ percentage, backgroundImage }) => {
             className="absolute top-0 left-0 h-full -z-50"
             style={{ width: `${percentage}%`, background: 'linear-gradient(90deg, #E0E0E0 0%, #FFC3DD 27.48%, #E973C4 58.15%, #9545F6 100%)', color: '#DEDEDE' }}
           ></div>
-          <div style={{ fontFamily: 'Syne', fontWeight: 500, position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}} className="text-white font-bold z-40 responsive-font">{percentage}</div>
+          <div style={{ fontFamily: 'Syne, sans-serif', fontWeight: 500, position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}} className="text-white font-bold z-40 responsive-font">{percentage}</div>
         </div>
       </div>
+      {/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap" rel="stylesheet"/> */}
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap" rel="stylesheet"/>
       <style>
+        
         {`
           @media screen and (max-width: 768px) {
             .text-2xl {
@@ -85,5 +93,3 @@ const LoadingScreen = ({ percentage, backgroundImage }) => {
 };
 
 export default LoadingScreen;
-
-
